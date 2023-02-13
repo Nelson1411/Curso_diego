@@ -302,3 +302,48 @@ if (nombre.match(nameRegex)) {
 } else {
     console.log("El nombre no es válido.");
 } 
+
+
+
+
+
+
+// Clasifica los correos segun su dominio en diferentes variables, usando RegEx.
+
+let correos = `
+diego@gmail.com
+francisco@yahoo.com
+alejandra@outlook.com
+valentina@gmail.com
+alexnis@hotmail.com
+mario@yahoo.com
+luis@outlook.com
+maria@hotmail.com
+fulanito@info.com
+sutanito@no-reply.com
+`;
+
+//Definir busquedas
+let gmailRegEx = /\w+\@gmail\.com/gi;
+let yahooRegEx = /\w+\@yahoo\.com/gi;
+let outlookRegEx = /\w+\@outlook\.com/gi;
+let hotmailRegEx = /\w+\@hotmail\.com/gi;
+let infoRegEx = /\w+\@info\.com/gi;
+let no_replyRegEx = /\w+\@no\-reply\.com/gi
+
+//aplicar match
+let resultado_gmailRegEx = correos.match(gmailRegEx);
+let resultado_yahooRegEx = correos.match(yahooRegEx);
+let resultado_outlookRegEx = correos.match(outlookRegEx);
+let resultado_hotmailRegEx = correos.match(hotmailRegEx);
+let resultado_infoRegEx = correos.match(infoRegEx);
+let resultado_no_replyRegEx = correos.match(no_replyRegEx);
+
+
+//Llamando variables cargadas
+console.log(resultado_gmailRegEx);
+console.log(resultado_yahooRegEx);
+console.log(resultado_outlookRegEx);
+console.log(resultado_hotmailRegEx);
+console.log(resultado_infoRegEx);
+console.log(resultado_no_replyRegEx);

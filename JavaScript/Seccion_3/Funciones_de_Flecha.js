@@ -57,3 +57,15 @@ mezcla.map( (elemento) => {
 
 console.log(strings);
 console.log(enteros);
+
+
+
+// OTRO EJEMPLO (Saludar a todos los alumnos del array "alumnos" usando .map() y funciones de flecha 
+// y guarde el saludo en una variable llamada "saludos");
+
+let alumnos = ["Pedrito","Juanito","Luisita","Camilito","Andreita","Joseito"];
+let saludos = [];
+
+alumnos.map( (valorDelElemento,indiceDelElemento)=> saludos.push("Hola "+ valorDelElemento) );
+
+saludos;
