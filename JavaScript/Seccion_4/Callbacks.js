@@ -222,7 +222,6 @@ function agregarProducto(miParametroCallback){
 
 
 // Callback Hell
-
 agregarProducto(
     function(){
         console.log(carrito);
