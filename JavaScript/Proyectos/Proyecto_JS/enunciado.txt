@@ -2,7 +2,7 @@ Elabora un portafolio (Web Site) que contenga informacion sobre ti, tus habilida
 Las herramientas manejadas, informacion de contacto y un reloj en la pantalla principal.
 Este portafolio debe estar Disponible en GitHub Pages.
 
-En el index coloca:
+En index coloca:
     - Menu / nav
     - Reloj
     - Nombre y Apellido
@@ -18,7 +18,7 @@ En contacto coloca:
         y el innerText diciendo "Enviado! ✅"
     - Footer
 
-En el trabajos coloca:
+En trabajos coloca:
     - Menu / nav
     - Nombre y Apellido
     - Lenguajes Conocidos
@@ -34,5 +34,4 @@ En el trabajos coloca:
     Libreria de animacion al hacer Scroll: https://michalsnik.github.io/aos/
 
 
-Tiempo de entrega: 27/02/2023 
-(pero si quieren el domingo proximo xD 19/02)
+Tiempo de entrega: 27/02/2023
