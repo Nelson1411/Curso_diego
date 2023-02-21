@@ -3,7 +3,7 @@
     Los selectores permiten seleccionar elementos del DOM (elementos HTML) para manipularlos en una página web.
     
     los selectores comunes son:
-
+    
     Seleccion individual
     .getElementById("id"): selecciona un elemento con un id específico.
 
