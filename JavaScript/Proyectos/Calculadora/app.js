@@ -41,4 +41,4 @@ boton_del.addEventListener("click", retroceder);
 
 
 // Añadiendo escucha al DOM ("Enter")
-document.addEventListener("keydown",(evento)=>{ if(evento.code === "Enter"){ totalOperacion()} });
+document.addEventListener("keydown",(keydown)=>{if(keydown.code === "Enter"){totalOperacion();}});

@@ -11,7 +11,9 @@ let hora = setInterval(actualizarHora,1000);
 // HTML Seleccionado.
 function actualizarHora(){ 
     let fecha = new Date();
+    //Hora local
     parrafo.textContent = fecha.toLocaleTimeString();
+    //Fecha Local
     parrafo2.innerHTML = fecha.toLocaleDateString();
 }
 
