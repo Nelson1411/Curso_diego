@@ -236,12 +236,12 @@ console.log(correo.replace(correo2,"@micorreo"))
 
 
 
+let messageRegex = /^[a-zA-Z-0-9.,!?@#$%^&*(){}[\]\\\/<>+=:;'"`~|_]{4,}$/g;
 
 
 
 
 // EJERCICIOS EXTRAS
-
 
 // Validación de correo electrónico
 let email = "susana_.@no-reply.me";
@@ -252,6 +252,19 @@ if (email.match(emailRegex)) {
 } else {
     console.log("El correo electrónico no es válido.");
 }
+
+
+var input = document.getElementById("input");
+var minombre = /^[a-zA-z]{3,}$/g 
+input.addEventListener("keydown", function(){
+    input.value.match(minombre) 
+        ? (input.style.background="green", console.log("TRUE") )
+        : (input.style.background="red", console.log("FALSE"))
+})
+
+
+
+
 
 
 
