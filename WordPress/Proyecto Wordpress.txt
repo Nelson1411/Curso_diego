@@ -1,0 +1,20 @@
+Crea una web personal en WORDPRESS - Online
+
+Herramientas:
+- Hosting: InfinityFree
+-* WordPress
+
+Debe contener: 
+-* Landing-Page
+- Portafolio de trabajos realizados
+- * Pagina de productos y/o servicios ofrecidos (Opcional: Woo-Commerce)
+- * Pagina de contacto (Formulario {WP-Forms} y mapa)
+- Pagina de Pago (En caso de no usar Woo-Commerce usar WP-Forms)
+
+Caracteristicas Globales:
+- * Menu Personalizado (Opcional: Submenus)
+- * Footer
+- Animaciones
+- * SEO
+- * Optimizacion Web (imagenes de nueva generacion y/o uso de CDN)
+- * Seguridad Informatica (SSL)
