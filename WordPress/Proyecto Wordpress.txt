@@ -17,4 +17,6 @@ Caracteristicas Globales:
 - Animaciones
 - * SEO
 - * Optimizacion Web (imagenes de nueva generacion y/o uso de CDN)
-- * Seguridad Informatica (SSL)
+- * Seguridad Informatica (SSL / Ocultar la pagina de Login)
+
+Opcional: DESARROLLAR una pagina de recepcion el ingresar en /wp-admin

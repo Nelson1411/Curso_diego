@@ -28,12 +28,32 @@
 */
 
 
+
+class Personaje {
+    //Constructor: asigna valor a las propiedades.
+    constructor(vida, velocidad,habilidad,caminar,correr,atacar){
+        this.vida = vida,
+        this.velocidad = velocidad,
+        this.habilidad = habilidad,
+        this.caminar = caminar,
+        this.correr = correr,
+        this.atacar = atacar
+    }
+}
+
+let mario = new Personaje(100,100, "bolas de fuego y transformacion",false,true,true);
+let luigi = new Personaje(90,105,"pelear con espada",true,true,false);
+let bowser = new Personaje(300,40,"bolas de fuego",true,false,true);
+
+console.log(mario);
+console.log(luigi);
+console.log(bowser);
+
 // En este ejemplo, la clase "Persona" tiene un constructor que se utiliza para asignar valores a las 
 // propiedades "nombre" y "edad" al crear una nueva instancia de la clase, 
 // esto quiere decir al crear un nuevo objeto. 
 
 // También tiene un método que es una funcion llamada "saludo" que retirna un mensaje.
-
 
 class Persona {
     //Constructor: asigna valor a las propiedades.

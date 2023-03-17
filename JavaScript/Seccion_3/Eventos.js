@@ -22,9 +22,9 @@
     
     Formas de manejar eventos:
 
-    •	Mediante atributos HTML: <button onClick="miFuncion ()">Presiona Aquí!</button>
+    •	Mediante atributos HTML: <button onclick="miFuncion()">Presiona Aquí!</button>
 
-    •	Mediante propiedades JavaScript: elemento.onClick = miFuncion (){ …código… }
+    •	Mediante propiedades JavaScript: elemento.onclick = miFuncion(){ …código… }
 
     •	Mediante addEventListener():  la forma más recomendable es hacer uso del método .addEventListener(), 
         el cuál es mucho más potente y versatil para la mayoría de los casos.
@@ -42,7 +42,6 @@ function cambiarTexto(){
 function cambiarTexto2(){
     parrafo.innerHTML = "Cambiar de nuevo por el evento de atributo HTML: onMouseLeave"
 }
-
 
 
 

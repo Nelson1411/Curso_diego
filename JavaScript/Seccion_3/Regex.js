@@ -194,14 +194,16 @@ console.log( gmail.test("algo algo algo algo palabra1") );
 // Rangos [0-9][a-z][A-Z]
 
 let mitexto = "Hola, me llamo Daniel Soto, tengo 13 años y es mi 6ta vez en CANADA";
-let mitexto2 = "34_9Ad-F#G!01z*?";
 
 console.log(mitexto.match(/[0-4]/g));
-console.log(mitexto2.match(/[a-z]/g));
-console.log(mitexto2.match(/[A-Z]/g));
 console.log(mitexto.match(/[0-9]/g));
-console.log(mitexto2.match(/[!#_*-]/g));
 
+
+let mitexto2 = "!3u4_9Ad-F#G!01z*?i";
+console.log(mitexto2.match(/[!#_*z\-]/g));
+console.log(mitexto2.match(/[A-Z]/g));
+console.log(mitexto2.match(/[a-z]/g));
+console.log(mitexto2.match(/[a-zA-Z]/g));
 
 
 

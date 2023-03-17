@@ -28,6 +28,12 @@
     document.getElementsByClassName("class");
     document.getElementsByTagName("div");
 
+}
+
+
+
+
+
 
     Los selectores se emplean junto a metodos para realizar diferentes acciones.
 */
@@ -35,6 +41,12 @@
 // Guardando elemento de id "parrafo" en una variable llamada parrafo
 // esta variable se usa en varias ocaciones mas adelante.
 let parrafo = document.getElementById("parrafo");
+
+
+
+
+
+
 //let titulo = document.getElementsByTagName("h1")[0];
 
 
@@ -46,35 +58,38 @@ let parrafo = document.getElementById("parrafo");
 //Medotos usados con selectores:
 
 // elemento.getAttribute: obtiene el(los) valor(es) del atributo indicado en el elemento seleccionado.
-console.log("Las clases del elemento son: " + parrafo.getAttribute("class"));
+console.log("El id del elemento es: " + parrafo.getAttribute("id"));
 
 
 
 
 // elemento.setAttribute: establece un atributo con su valor en el elemento seleccionado.
-parrafo.setAttribute("miAtributo","Este es el valor");
+parrafo.setAttribute("miAtributo","Este_es_el_valor");
 // console.log("El atributo miAtributo es: " + parrafo.getAttribute("miAtributo"));
 
 
 
 
 // elemento.innerHTML: obtiene o establece el contenido HTML interno de un elemento seleccionado.
+// generalmente div, section, aside, main, nav
 
-//Obteniendo contenido:
-// console.log("El contenido del elemento es: " + parrafo.innerHTML);
+//Obteniendo elemento:
+let cajaVacia = document.getElementById("caja_vacia");
+
 
 //Mutando el contenido interno del elemento
-parrafo.innerHTML = "Hola Mario, Este parrafo fue modificado con el selector .getElementById() y el medodo .innerHTML."
+cajaVacia.innerHTML = "<p>Hola este parrafo se agrego con innerHTML</p>"
 
-//Obteniendo contenido:
-// console.log("El contenido del elemento es: " + parrafo.innerHTML);
 
+// elemento.innerText: modifica el texto de un elemento, usualmente p,h1,h2,span
+parrafo.innerText = "Hola, Este parrafo fue modificado con el selector .getElementById() y el medodo .innerText."
 
 
 
 
 // elemento.style: permite acceder y manipular las propiedades CSS del elemento seleccionado.
-parrafo.style.fontFamily = "Courier New"
+parrafo.style.fontFamily = "Courier New";
+parrafo.style.fontWeight = 900;
 
 
 
@@ -106,7 +121,7 @@ console.log(
 );
 
 
-//parrafo.classList.remove("border-4","animate-bounce");
+parrafo.classList.remove("animate-bounce");
 
 
 
@@ -125,10 +140,13 @@ console.log(
 //Crear un nuevo elemento (Sin contenido aun)
 let nuevoParrafo = document.createElement("p");
 let nuevoParrafo2 = document.createElement("p");
+let nuevoParrafo3 = document.createElement("p");
 
 //agregar contenido a elementos
-nuevoParrafo.innerHTML="Hola soy un parrafo creado con JavaScript usando innerHTML";
-nuevoParrafo2.textContent="Hola soy otro parrafo creado con JavaScript usando textContent";
+nuevoParrafo.innerText="Hola soy un parrafo creado y cargado con JavaScript usando innerText, createElement() y appendChild()";
+nuevoParrafo2.innerHTML="Hola soy otro parrafo creado y cargado con JavaScript usando innerHTML, createElement() y appendChild()";
+nuevoParrafo3.textContent="Hola soy otro parrafo creado y cargado con JavaScript usando textContent, createElement() y appendChild()";
+
 
 //Seleccionar el contenedor(div) para agregar el parrafo anteriormente creado y rellenado.
 let caja = document.getElementsByName("caja")[0]; // 0 hace referencia a la primera coincidencia con el name "caja"
@@ -136,10 +154,11 @@ let caja = document.getElementsByName("caja")[0]; // 0 hace referencia a la prim
 //Añadir a la caja el parrafo recien creado.
 caja.appendChild(nuevoParrafo);
 caja.appendChild(nuevoParrafo2);
+caja.appendChild(nuevoParrafo3);
 
 
 
 
 
 // elemento.removeChild: elimina un nodo hijo de un elemento seleccionado.
-// caja.removeChild(nuevoParrafo2);
+caja.removeChild(nuevoParrafo2);
