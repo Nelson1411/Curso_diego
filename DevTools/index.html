@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hola
+</body>
+
+<!-- console.error -->
+<script>
+    let miVariable = "Ha ocurrido un error";
+    console.error(miVariable)
+</script>
+
+<!-- console.warn -->
+<script>
+    let miVariable2 = "Advertencia: Esta accion podria generar perdidas permanentes ¿Desea continuar el proceso?";
+    console.warn(miVariable2)
+</script>
+
+<!-- console.table -->
+<script>
+    let miVariable3 = [
+        {nombre:"Diego",apellido:"Rodriguez"},
+        {nombre:"Hector",apellido:"Castillo"},
+        {nombre:"Marcos",apellido:"Martinez"},
+        {nombre:"Nelson",apellido:"Garcia"},
+        {nombre:"Ruben",apellido:"Diaz"}
+    ];
+
+    console.table(miVariable3);
+</script>
+
+<!-- console.time -->
+<script>
+    function calculo(){
+    console.time("Tiempo que toma la ejecucion");
+    let total = 0;
+    for (let i = 0; i < 500; i++){
+        console.log(total++);
+    }
+    console.timeEnd("Tiempo que toma la ejecucion");
+    }
+</script>
+
+<!-- Quitar comentario para activar Funcion -->
+<!-- <script>calculo()</script>  -->
+</html>
